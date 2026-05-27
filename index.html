@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Привет из Грузии - семейное грузинское кафе с настоящей грузинской кухней в Санкт-Петербурге."
+      content="Привет из Грузии — семейное грузинское кафе с настоящей грузинской кухней в Санкт&#8209;Петербурге."
     />
     <title>Привет из Грузии — грузинское кафе</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@500;600;700;800&family=Montserrat+Alternates:wght@900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=paper-dividers-3" />
+    <link rel="stylesheet" href="./styles.css?v=warm-section-gradient-2" />
   </head>
   <body>
     <main class="site-shell">
@@ -167,8 +167,6 @@
         </div>
       </section>
 
-      <div class="section-divider section-divider--stamp" aria-hidden="true"></div>
-
       <section class="landing-section menu-section" id="menu" aria-labelledby="menu-title">
         <div class="section-inner">
           <div class="section-heading">
@@ -190,7 +188,7 @@
             </article>
             <article class="menu-item food-card" style="--card-rotate: 0.8deg; --reveal-delay: 160ms">
               <div class="food-card__media">
-                <img src="./assets/food/menu-khachapuri.png" alt="Хачапури по-аджарски" />
+                <img src="./assets/food/menu-khachapuri.png" alt="Хачапури по&#8209;аджарски" />
               </div>
               <div class="food-card__body">
                 <span class="food-card__price">цена уточняется</span>
@@ -287,7 +285,7 @@
             <dl>
               <div>
                 <dt>Адрес</dt>
-                <dd>Санкт-Петербург, адрес уточняется</dd>
+                <dd>Санкт&#8209;Петербург, адрес уточняется</dd>
               </div>
               <div>
                 <dt>Телефон</dt>
@@ -309,9 +307,9 @@
 
           <div class="contact-postcard yandex-map-frame" aria-label="Будущая карта кафе">
             <div class="yandex-map-frame__placeholder">
-              <span>Санкт-Петербург</span>
+              <span>Санкт&#8209;Петербург</span>
               <strong>Адрес уточняется</strong>
-              <p>Скоро здесь появится Яндекс.Карта в&nbsp;бумажной рамке. Пока можно позвонить или оставить заявку на&nbsp;стол.</p>
+              <p>Скоро здесь появится Яндекс Карта в&nbsp;бумажной рамке. Пока можно позвонить или оставить заявку на&nbsp;стол.</p>
             </div>
           </div>
         </div>
@@ -351,13 +349,13 @@
 
       <form class="booking-form" id="booking-form" novalidate>
         <div class="booking-form__heading">
-          <h2 id="booking-title">Приглашайте друзей и приходите — мы вас ждём</h2>
+          <h2 id="booking-title">Приглашайте друзей и&nbsp;приходите&nbsp;— мы&nbsp;вас ждём</h2>
         </div>
 
         <div class="booking-form__grid">
           <label class="booking-field">
-            <span class="sr-only">Ваши имя и фамилия</span>
-            <input name="name" type="text" placeholder="Ваши имя и фамилия" autocomplete="name" required />
+            <span class="sr-only">Имя и&nbsp;фамилия</span>
+            <input name="name" type="text" placeholder="Имя и фамилия" autocomplete="name" required />
           </label>
 
           <label class="booking-field">
@@ -388,7 +386,7 @@
 
         <label class="booking-consent">
           <input name="consent" type="checkbox" required />
-          <span>Я даю согласие на обработку персональных данных и подтверждаю корректность заявки.</span>
+          <span>Я даю согласие на&nbsp;обработку персональных данных и&nbsp;подтверждаю корректность заявки.</span>
         </label>
 
         <div class="booking-form__footer">
@@ -459,7 +457,7 @@
           const data = Object.fromEntries(new FormData(form).entries());
           console.info("Mock booking request", data);
 
-          status.textContent = "Заявка принята. Скоро администратор свяжется с вами для подтверждения.";
+          status.textContent = "Заявка принята. Скоро администратор свяжется с\u00A0вами для подтверждения.";
           form.reset();
         });
 
