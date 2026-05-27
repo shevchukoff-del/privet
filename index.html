@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Привет из Грузии - семейное грузинское кафе с настоящей грузинской кухней в Санкт-Петербурге."
+    />
+    <title>Привет из Грузии — грузинское кафе</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@500;600;700;800&family=Montserrat+Alternates:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=paper-dividers-3" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__paper" aria-hidden="true"></div>
+        <div class="hero__grain" aria-hidden="true"></div>
+        <div class="hero__light" aria-hidden="true"></div>
+
+        <header class="hero-header" aria-label="Главная навигация">
+          <a class="brand" href="#top" aria-label="Привет из Грузии">
+            <span class="brand__stamp" aria-hidden="true">
+              <img src="./assets/logo/logo-stamp-transparent.png" alt="" />
+            </span>
+          </a>
+
+          <input class="hero-menu-toggle" type="checkbox" id="hero-menu-toggle" aria-label="Открыть меню" />
+          <label class="hero-menu-button" for="hero-menu-toggle" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </label>
+
+          <nav class="hero-nav" aria-label="Меню сайта">
+            <a href="#menu">Меню</a>
+            <a href="#about">О нас</a>
+            <a href="#delivery">Доставка</a>
+            <a href="#contacts">Контакты</a>
+          </nav>
+        </header>
+
+        <div class="hero-collage hero-collage--left" aria-hidden="true">
+          <div class="photo-motion photo-motion--left hero-photo-card--left-top">
+            <div class="hero-photo-card hero-photo-card--landscape parallax-ready grain-ready">
+              <div class="hero-photo-inner">
+                <img src="./assets/photos/tbilisi-fortress-new.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="photo-motion photo-motion--left hero-photo-card--left-mid">
+            <div class="hero-photo-card hero-photo-card--landscape parallax-ready grain-ready">
+              <div class="hero-photo-inner">
+                <img src="./assets/photos/georgian-dough-new.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="photo-motion photo-motion--left hero-photo-card--left-low">
+            <div class="hero-photo-card hero-photo-card--landscape parallax-ready grain-ready">
+              <div class="hero-photo-inner">
+                <img src="./assets/photos/tbilisi-roofs-new.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-collage hero-collage--right" aria-hidden="true">
+          <div class="photo-motion photo-motion--right hero-photo-card--right-top">
+            <div class="hero-photo-card hero-photo-card--portrait parallax-ready grain-ready">
+              <div class="hero-photo-inner">
+                <img src="./assets/photos/tone-baker-new.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="photo-motion photo-motion--right hero-photo-card--right-mid">
+            <div class="hero-photo-card hero-photo-card--landscape parallax-ready grain-ready">
+              <div class="hero-photo-inner">
+                <img src="./assets/photos/tbilisi-aerial-new.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="photo-motion photo-motion--right hero-photo-card--right-low">
+            <div class="hero-photo-card hero-photo-card--landscape parallax-ready grain-ready">
+              <div class="hero-photo-inner">
+                <img src="./assets/photos/georgian-man-new.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="olive-branch" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="hero__content">
+          <div class="hero__title-wrap">
+            <h1 id="hero-title" class="hero-title" aria-label="Привет из Грузии">
+              <span class="hero-title__line hero-title__line--hello" data-text="Привет">Привет</span>
+              <span class="hero-title__line hero-title__line--from" data-text="из">из</span>
+              <span class="hero-title__line hero-title__line--georgia" data-text="Грузии">Грузии</span>
+            </h1>
+            <svg class="sun-doodle" viewBox="0 0 92 92" aria-hidden="true">
+              <path class="sun-doodle__circle" d="M44 25c7.6-.9 14.2 1.6 18.8 6.6 4.2 4.6 6.4 11.3 5.1 18.2-1.4 8.1-7.9 15.3-16.2 17.1-8.1 1.8-15.3-.7-20.1-5.6-5-5.1-7.4-12.5-5.2-20.1C28.5 33.4 35.2 26.1 44 25Z" />
+              <path class="sun-doodle__ray" d="M45 5c.6 3.8-.9 8.1-.4 12M64 11c-1.8 3-3.4 6.3-5.6 10.1M80 27c-3.2 1.8-6.9 3.2-11.2 5.4M85 49c-4.3-.4-8-.4-12.2-.9M76 71c-3-2.5-6.2-5.2-9.4-8.1M49 87c-.6-4.2-1.1-7.8-1.4-12.8M26 83c2.4-3.1 4.4-6.7 6.8-10.7M8 66c4.5-2.1 8.3-4.3 12.4-6.8M5 42c4.8.8 9.3 1.2 14 1.8M14 19c3.5 3.4 7.3 6.5 11.1 9.6M29 7c1.8 4.1 3.3 8.1 5.2 12" />
+            </svg>
+          </div>
+
+          <div class="hero-copy">
+            <h2>Семейное грузинское кафе в&nbsp;Санкт&#8209;Петербурге</h2>
+            <p>Хинкали, хачапури и&nbsp;блюда от&nbsp;шефа Георгия Шонии&nbsp;— каждый день.</p>
+          </div>
+
+          <div class="hero-actions" aria-label="Действия">
+            <a class="button button--primary" href="#booking">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M8 2v4M16 2v4M3.5 9h17M5 4h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+                <path d="M8 13h.01M12 13h.01M16 13h.01M8 17h.01M12 17h.01" />
+              </svg>
+              Забронировать стол
+            </a>
+            <a class="button button--secondary" href="#delivery">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M10 17H7.5a2.5 2.5 0 1 1-5 0H2V6a2 2 0 0 1 2-2h9v13Z" />
+                <path d="M13 8h4l4 4v5h-2.5" />
+                <path d="M17 17h-4" />
+                <circle cx="7.5" cy="17" r="2.5" />
+                <circle cx="18.5" cy="17" r="2.5" />
+              </svg>
+              Заказать доставку
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-cityline" aria-hidden="true">
+          <img src="./assets/cityline/tbilisi-cityline-transparent.png" alt="" aria-hidden="true" />
+        </div>
+      </section>
+
+      <section class="landing-section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-inner about-layout">
+          <div class="section-copy">
+            <p class="section-kicker">О нас</p>
+            <h2 id="about-title">Грузинское застолье в&nbsp;Петербурге</h2>
+            <p>
+              Мы придумали это кафе как тёплую кухню для семьи, друзей и&nbsp;долгих разговоров.
+              Здесь руками замешивают тесто, лепят хинкали, пекут хачапури к&nbsp;столу и&nbsp;готовят
+              блюда, которые хочется делить на&nbsp;всех.
+            </p>
+            <p>
+              Шеф Георгий Шония собирает меню из&nbsp;знакомых грузинских вкусов: пряные травы,
+              горячий хлеб, сыр, мясо с&nbsp;огня, домашние соусы и&nbsp;вино для неспешного вечера.
+            </p>
+          </div>
+
+          <div class="section-photo-stack" aria-hidden="true">
+            <div class="section-photo-card section-photo-card--main">
+              <img src="./assets/photos/georgian-dough-new.jpg" alt="" />
+            </div>
+            <div class="section-photo-card section-photo-card--small">
+              <img src="./assets/food/menu-khachapuri.png" alt="" />
+            </div>
+            <span class="section-stamp">семейные рецепты</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider section-divider--stamp" aria-hidden="true"></div>
+
+      <section class="landing-section menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Меню</p>
+            <h2 id="menu-title">Что попробовать первым</h2>
+            <p>Тёплая подборка блюд для первого застолья: хинкали, хачапури, мясо с&nbsp;огня и&nbsp;домашние напитки.</p>
+          </div>
+
+          <div class="menu-list" aria-label="Популярные блюда">
+            <article class="menu-item food-card" style="--card-rotate: -1.2deg; --reveal-delay: 80ms">
+              <div class="food-card__media">
+                <img src="./assets/food/menu-khinkali.png" alt="Хинкали на тарелке" />
+              </div>
+              <div class="food-card__body">
+                <span class="food-card__price">цена уточняется</span>
+                <h3>Хинкали</h3>
+                <p>Сочные, горячие, с&nbsp;бульоном, зеленью и&nbsp;ароматными специями.</p>
+              </div>
+            </article>
+            <article class="menu-item food-card" style="--card-rotate: 0.8deg; --reveal-delay: 160ms">
+              <div class="food-card__media">
+                <img src="./assets/food/menu-khachapuri.png" alt="Хачапури по-аджарски" />
+              </div>
+              <div class="food-card__body">
+                <span class="food-card__price">цена уточняется</span>
+                <h3>Хачапури по&#8209;аджарски</h3>
+                <p>Румяное тесто, горячий сыр и&nbsp;желток, который смешивают прямо за&nbsp;столом.</p>
+              </div>
+            </article>
+            <article class="menu-item food-card" style="--card-rotate: -0.5deg; --reveal-delay: 240ms">
+              <div class="food-card__media">
+                <img src="./assets/food/menu-shashlik.png" alt="Шашлык с зеленью" />
+              </div>
+              <div class="food-card__body">
+                <span class="food-card__price">цена уточняется</span>
+                <h3>Шашлык</h3>
+                <p>Мясо с&nbsp;огня, лук, зелень и&nbsp;соусы для большого общего стола.</p>
+              </div>
+            </article>
+            <article class="menu-item food-card" style="--card-rotate: 1.1deg; --reveal-delay: 320ms">
+              <div class="food-card__media">
+                <img src="./assets/food/menu-eggplant.png" alt="Пхали и баклажаны с орехами" />
+              </div>
+              <div class="food-card__body">
+                <span class="food-card__price">цена уточняется</span>
+                <h3>Пхали и&nbsp;баклажаны</h3>
+                <p>Овощи, орехи, гранат и&nbsp;много грузинского характера в&nbsp;одной тарелке.</p>
+              </div>
+            </article>
+            <article class="menu-item food-card" style="--card-rotate: -0.9deg; --reveal-delay: 400ms">
+              <div class="food-card__media">
+                <img src="./assets/food/menu-kharcho.png" alt="Горячий грузинский суп" />
+              </div>
+              <div class="food-card__body">
+                <span class="food-card__price">цена уточняется</span>
+                <h3>Харчо или чихиртма</h3>
+                <p>Согревающий суп для тех, кто любит домашнюю кухню и&nbsp;мягкие специи.</p>
+              </div>
+            </article>
+            <article class="menu-item food-card" style="--card-rotate: 0.6deg; --reveal-delay: 480ms">
+              <div class="food-card__media">
+                <img src="./assets/food/menu-mors.png" alt="Домашний морс" />
+              </div>
+              <div class="food-card__body">
+                <span class="food-card__price">цена уточняется</span>
+                <h3>Лимонад и&nbsp;вино</h3>
+                <p>Домашние напитки для обеда, ужина и&nbsp;длинного грузинского вечера.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider section-divider--torn section-divider--paper-to-blue" aria-hidden="true"></div>
+
+      <section class="landing-section delivery-section" id="delivery" aria-labelledby="delivery-title">
+        <div class="section-inner delivery-layout">
+          <div class="section-copy">
+            <p class="section-kicker">Доставка</p>
+            <h2 id="delivery-title">Грузинское застолье дома</h2>
+            <p>
+              Если хочется остаться дома, мы аккуратно соберём заказ: горячее отдельно, соусы отдельно,
+              хлеб свежим, а&nbsp;настроение как в&nbsp;кафе.
+            </p>
+          </div>
+
+          <div class="delivery-visual">
+            <div class="delivery-photo-card" aria-hidden="true">
+              <img src="./assets/food/menu-shashlik.png" alt="" />
+            </div>
+            <div class="delivery-steps" aria-label="Как работает доставка">
+              <div>
+                <span>1</span>
+                <p>Выбираете блюда</p>
+              </div>
+              <div>
+                <span>2</span>
+                <p>Кухня собирает заказ к&nbsp;вашему времени</p>
+              </div>
+              <div>
+                <span>3</span>
+                <p>Курьер привозит тёплый ужин</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider section-divider--torn section-divider--blue-to-paper" aria-hidden="true"></div>
+
+      <section class="landing-section contacts-section" id="contacts" aria-labelledby="contacts-title">
+        <div class="section-inner contacts-layout">
+          <div class="contact-card">
+            <p class="section-kicker">Контакты</p>
+            <h2 id="contacts-title">Ждём вас каждый день</h2>
+            <dl>
+              <div>
+                <dt>Адрес</dt>
+                <dd>Санкт-Петербург, адрес уточняется</dd>
+              </div>
+              <div>
+                <dt>Телефон</dt>
+                <dd><a href="tel:+79991234567">+7&nbsp;(999)&nbsp;123&#8209;45&#8209;67</a></dd>
+              </div>
+              <div>
+                <dt>Время</dt>
+                <dd>Ежедневно 10:00&nbsp;—&nbsp;23:00</dd>
+              </div>
+            </dl>
+            <a class="button button--primary" href="#booking">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M8 2v4M16 2v4M3.5 9h17M5 4h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+                <path d="M8 13h.01M12 13h.01M16 13h.01M8 17h.01M12 17h.01" />
+              </svg>
+              Забронировать стол
+            </a>
+          </div>
+
+          <div class="contact-postcard yandex-map-frame" aria-label="Будущая карта кафе">
+            <div class="yandex-map-frame__placeholder">
+              <span>Санкт-Петербург</span>
+              <strong>Адрес уточняется</strong>
+              <p>Скоро здесь появится Яндекс.Карта в&nbsp;бумажной рамке. Пока можно позвонить или оставить заявку на&nbsp;стол.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="landing-cta" aria-labelledby="final-cta-title">
+        <div class="section-inner landing-cta__inner">
+          <h2 id="final-cta-title">Соберите друзей: стол уже почти накрыт</h2>
+          <div class="hero-actions">
+            <a class="button button--primary" href="#booking">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M8 2v4M16 2v4M3.5 9h17M5 4h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+                <path d="M8 13h.01M12 13h.01M16 13h.01M8 17h.01M12 17h.01" />
+              </svg>
+              Забронировать стол
+            </a>
+            <a class="button button--secondary" href="#delivery">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M10 17H7.5a2.5 2.5 0 1 1-5 0H2V6a2 2 0 0 1 2-2h9v13Z" />
+                <path d="M13 8h4l4 4v5h-2.5" />
+                <path d="M17 17h-4" />
+                <circle cx="7.5" cy="17" r="2.5" />
+                <circle cx="18.5" cy="17" r="2.5" />
+              </svg>
+              Заказать доставку
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="booking-dialog" id="booking-dialog" aria-labelledby="booking-title">
+      <div class="booking-dialog__paper" aria-hidden="true"></div>
+      <button class="booking-dialog__close" type="button" data-booking-close aria-label="Закрыть форму бронирования">
+        <span></span><span></span>
+      </button>
+
+      <form class="booking-form" id="booking-form" novalidate>
+        <div class="booking-form__heading">
+          <h2 id="booking-title">Приглашайте друзей и приходите — мы вас ждём</h2>
+        </div>
+
+        <div class="booking-form__grid">
+          <label class="booking-field">
+            <span class="sr-only">Ваши имя и фамилия</span>
+            <input name="name" type="text" placeholder="Ваши имя и фамилия" autocomplete="name" required />
+          </label>
+
+          <label class="booking-field">
+            <span class="sr-only">Телефон</span>
+            <input name="phone" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" required />
+          </label>
+
+          <label class="booking-field">
+            <span class="sr-only">Дата бронирования</span>
+            <input name="date" type="text" placeholder="Дата" inputmode="numeric" required />
+          </label>
+
+          <label class="booking-field">
+            <span class="sr-only">Время бронирования</span>
+            <input name="time" type="text" placeholder="Время" inputmode="numeric" required />
+          </label>
+
+          <label class="booking-field">
+            <span class="sr-only">Количество гостей</span>
+            <input name="guests" type="number" min="1" max="40" placeholder="Количество гостей" inputmode="numeric" required />
+          </label>
+
+          <label class="booking-field">
+            <span class="sr-only">Комментарий</span>
+            <input name="comment" type="text" placeholder="Комментарий" />
+          </label>
+        </div>
+
+        <label class="booking-consent">
+          <input name="consent" type="checkbox" required />
+          <span>Я даю согласие на обработку персональных данных и подтверждаю корректность заявки.</span>
+        </label>
+
+        <div class="booking-form__footer">
+          <button class="button button--primary booking-submit" type="submit">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M8 2v4M16 2v4M3.5 9h17M5 4h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+              <path d="M8 13h.01M12 13h.01M16 13h.01M8 17h.01M12 17h.01" />
+            </svg>
+            Забронировать стол
+          </button>
+          <p class="booking-form__status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </dialog>
+
+    <script>
+      (() => {
+        const dialog = document.querySelector("#booking-dialog");
+        const form = document.querySelector("#booking-form");
+        const status = dialog?.querySelector(".booking-form__status");
+        const openButtons = document.querySelectorAll('a[href="#booking"]');
+        const closeButtons = dialog?.querySelectorAll("[data-booking-close]") ?? [];
+        const menuToggle = document.querySelector("#hero-menu-toggle");
+
+        if (!dialog || !form || !status) return;
+
+        document.querySelectorAll(".hero-nav a").forEach((link) => {
+          link.addEventListener("click", () => {
+            if (menuToggle) menuToggle.checked = false;
+          });
+        });
+
+        const openDialog = () => {
+          status.textContent = "";
+          if (!dialog.open) dialog.showModal();
+          document.body.classList.add("modal-open");
+          requestAnimationFrame(() => form.elements.name?.focus());
+        };
+
+        const closeDialog = () => {
+          dialog.close();
+          document.body.classList.remove("modal-open");
+        };
+
+        openButtons.forEach((button) => {
+          button.addEventListener("click", (event) => {
+            event.preventDefault();
+            openDialog();
+          });
+        });
+
+        closeButtons.forEach((button) => button.addEventListener("click", closeDialog));
+
+        dialog.addEventListener("click", (event) => {
+          if (event.target === dialog) closeDialog();
+        });
+
+        dialog.addEventListener("close", () => document.body.classList.remove("modal-open"));
+
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+
+          if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+          }
+
+          const data = Object.fromEntries(new FormData(form).entries());
+          console.info("Mock booking request", data);
+
+          status.textContent = "Заявка принята. Скоро администратор свяжется с вами для подтверждения.";
+          form.reset();
+        });
+
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const revealItems = document.querySelectorAll(
+          ".landing-section .section-copy, .landing-section .section-heading, .section-photo-stack, .menu-item, .delivery-visual, .contact-card, .yandex-map-frame, .landing-cta__inner"
+        );
+
+        if (reduceMotion || !("IntersectionObserver" in window)) {
+          revealItems.forEach((item) => item.classList.add("is-visible"));
+          return;
+        }
+
+        revealItems.forEach((item) => item.classList.add("reveal"));
+
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                revealObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.16, rootMargin: "0px 0px -8% 0px" }
+        );
+
+        revealItems.forEach((item) => revealObserver.observe(item));
+      })();
+    </script>
+  </body>
+</html>
